@@ -43,7 +43,7 @@ def question3(array,root):
     def findRange(root,array):
         if not root:
             return
-        if root.val < array[-1] and root.val > array[0]:
+        if root.val <= array[-1] and root.val >= array[0]:
             ans.append(root.val)
         if root.left:
             findRange(root.left,array)
