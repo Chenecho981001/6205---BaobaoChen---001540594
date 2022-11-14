@@ -30,10 +30,11 @@ def question2(root, parent_node):
     if not root:
         return None
     root.parent = parent_node
+    parent_node = root
     if root.left:
-        question2(root.left,root)
+        question2(root.left,parent_node)
     if root.right:
-        question2(root.right,root)
+        question2(root.right,oarent_node)
     return root
 #time:on
 
